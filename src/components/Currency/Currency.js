@@ -14,7 +14,7 @@ const Currency = (props) => {
   );
 };
 
-Currency.PropTypes = {
+Currency.propTypes = {
   currency: PropTypes.shape({
     icon: PropTypes.string,
     currencyName: PropTypes.string,

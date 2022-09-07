@@ -1,5 +1,7 @@
+import CurrencyList from '../../components/CurrencyList/CurrencyList';
+
 const Home = () => {
-  <h1>Home</h1>;
+  <CurrencyList />;
 };
 
 export default Home;
