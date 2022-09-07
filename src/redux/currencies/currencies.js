@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable camelcase */
 // Import
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
@@ -33,7 +35,7 @@ const reducerCurrencies = createSlice({
       })
       .addCase(FetchedCurrencies.fulfilled, (state, action) => {
         state.status = 'Fulfilled';
-        state.rockets = action.payload;
+        state.currencies = action.payload;
       })
       .addCase(FetchedCurrencies.rejected, (state, action) => {
         state.status = 'Rejected';
