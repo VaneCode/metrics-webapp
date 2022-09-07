@@ -1,3 +1,9 @@
-.fakeClass {
-  color: #000;
+.listCurrencies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.listCurrencies :nth-child(1) {
+  grid-column: span 2;
 }

@@ -3,6 +3,7 @@ import { useSelector, shallowEqual, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { FetchedCurrencies } from '../../redux/currencies/currencies';
 import Currency from '../Currency/Currency';
+import styles from './CurrencyList.module.css';
 
 const CurrencyList = () => {
   // Get the list of currencies from the state
@@ -13,13 +14,11 @@ const CurrencyList = () => {
     dispatch(FetchedCurrencies());
   }, []);
   return (
-    <>
-      <div>
-        {currenciesStatus.currencies.map((currency) => (
-          <Currency key={currency.id} currency={currency} />
-        ))}
-      </div>
-    </>
+    <div className={styles.listCurrencies}>
+      {currenciesStatus.currencies.map((currency) => (
+        <Currency key={currency.id} currency={currency} />
+      ))}
+    </div>
   );
 };
 

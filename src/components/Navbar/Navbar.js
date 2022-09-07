@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './NavBar.module.css';
+import styles from './Navbar.module.css';
 import backArrow from './backArrow.png';
 import microphone from './microphone.png';
 import settings from './settings.png';

@@ -1,15 +1,18 @@
 // Import
 import PropTypes from 'prop-types';
+import styles from './Currency.module.css';
 
 const Currency = (props) => {
   const { currency } = props;
   return (
-    <div>
-      <div>
-        <img src={currency.icon} alt="Currency icon" />
+    <div className={styles.currencyDiv}>
+      <div className={styles.currencyIcon}>
+        <img src={currency.icon} alt="Currency icon" className={styles.icon} />
       </div>
-      <h3>{currency.currencyName}</h3>
-      <span>{currency.currencyCode}</span>
+      <div className={styles.currencyTags}>
+        <h3>{currency.currencyName}</h3>
+        <span>{currency.currencyCode}</span>
+      </div>
     </div>
   );
 };

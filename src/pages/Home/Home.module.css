@@ -1,3 +1,5 @@
-.fakeClass {
-  color: #000;
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
