@@ -20,7 +20,7 @@ export const FetchedCurrencies = createAsyncThunk(
 // Initialize the state
 const initialState = {
   currencies: [],
-  currency: [],
+  currencyDetails: [],
   status: '',
 };
 
@@ -29,8 +29,8 @@ const reducerCurrencies = createSlice({
   name: 'currencies',
   initialState,
   reducers: {
-    getCurrency: (state, action) => {
-      state.currency = state.currencies.filter(
+    getCurrencyDetails: (state, action) => {
+      state.currencyDetails = state.currencies.filter(
         (currency) => currency.currencyCode === action.payload.currency.currencyCode,
       );
     },
@@ -52,6 +52,6 @@ const reducerCurrencies = createSlice({
 });
 
 // Exports actions created automaticaly with createSlice
-export const { getCurrency } = reducerCurrencies.actions;
+export const { getCurrencyDetails } = reducerCurrencies.actions;
 
 export default reducerCurrencies.reducer;
