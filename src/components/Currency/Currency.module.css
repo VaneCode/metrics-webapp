@@ -14,6 +14,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: invert(34%) sepia(61%) saturate(571%) hue-rotate(181deg)
+    brightness(93%) contrast(88%);
 }
 
 .currencyTags {

@@ -10,9 +10,9 @@ const FETCHED_CURRENCIES = '/metric-webapp/currencies/FETCHED_CURRENCIES';
 export const FetchedCurrencies = createAsyncThunk(
   FETCHED_CURRENCIES,
   async () => {
-    const payload = await fetch('https://api.currencyfreaks.com/supported-currencies').then(
-      (data) => data.json(),
-    );
+    const payload = await fetch(
+      'https://api.currencyfreaks.com/supported-currencies',
+    ).then((data) => data.json());
     return payload;
   },
 );
@@ -20,14 +20,21 @@ export const FetchedCurrencies = createAsyncThunk(
 // Initialize the state
 const initialState = {
   currencies: [],
-  loading: 'idle',
+  currency: [],
+  status: '',
 };
 
 //
 const reducerCurrencies = createSlice({
   name: 'currencies',
   initialState,
-  reducers: {},
+  reducers: {
+    getCurrency: (state, action) => {
+      state.currency = state.currencies.filter(
+        (currency) => currency.currencyCode === action.payload.currency.currencyCode,
+      );
+    },
+  },
   extraReducers(builder) {
     builder
       .addCase(FetchedCurrencies.pending, (state) => {
@@ -43,5 +50,8 @@ const reducerCurrencies = createSlice({
       });
   },
 });
+
+// Exports actions created automaticaly with createSlice
+export const { getCurrency } = reducerCurrencies.actions;
 
 export default reducerCurrencies.reducer;
