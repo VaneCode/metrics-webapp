@@ -22,13 +22,11 @@ export const FetchedCurrencies = createAsyncThunk(
 
 export const FetchedByName = createAsyncThunk(
   FETCHED_BY_NAME,
-  async (filter) => {
+  async () => {
     const result = await fetch(
       'https://api.currencyfreaks.com/supported-currencies',
     ).then((data) => data.json());
-    // console.log('enter');
-    const payload = result.filter((currency) => currency.currencyName.includes(filter));
-    // console.log(payload);
+    const payload = result.filter((currency) => currency.currencyName === 'Adventure Gold');
     return payload;
   },
 );
@@ -36,6 +34,7 @@ export const FetchedByName = createAsyncThunk(
 // Initialize the state
 const initialState = {
   currencies: [],
+  currenByName: [],
   currencyDetails: [],
   status: '',
 };
@@ -49,6 +48,11 @@ const reducerCurrencies = createSlice({
       state.currencyDetails = state.currencies.filter(
         (currency) => currency.currencyCode === action.payload.currency.currencyCode,
       );
+    },
+    getCurrenciesByName: (state, action) => {
+      const search = action.payload.newFilter.searchWord;
+      const filteredData = state.currencies.filter((item) => Object.values(item).join('').toLowerCase().includes(search));
+      state.currenByName = filteredData;
     },
   },
   extraReducers(builder) {
@@ -65,6 +69,6 @@ const reducerCurrencies = createSlice({
 });
 
 // Exports actions created automaticaly with createSlice
-export const { getCurrencyDetails } = reducerCurrencies.actions;
+export const { getCurrencyDetails, getCurrenciesByName } = reducerCurrencies.actions;
 
 export default reducerCurrencies.reducer;

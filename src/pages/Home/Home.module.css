@@ -1,4 +1,4 @@
-.header{
+.header {
   width: 100%;
   background-color: #4369b2;
   display: flex;
@@ -6,14 +6,17 @@
   justify-content: space-between;
   padding: 1rem;
 }
-
-.currenciesList{
+.search input {
+  color: var(--white-color);
+  background-color: transparent;
+  border: red solid 2px;
+}
+.currenciesList {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-.currenciesList div{
+.currenciesList div {
   flex: 50%;
 }
-
