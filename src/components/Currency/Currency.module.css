@@ -1,13 +1,15 @@
 .currencyDiv {
   display: flex;
-  flex-direction: column;
-  padding: 1rem;
+  padding: 0.5rem;
+  justify-content: space-between;
+  border: solid 1px black;
+  height: 11.5rem;
 }
 
 .currencyIcon {
   align-self: center;
-  width: 10rem;
-  height: 6rem;
+  flex: 50%;
+  height: 10rem;
 }
 
 .icon {
@@ -19,8 +21,9 @@
 }
 
 .currencyTags {
-  height: 50%;
+  flex: 50%;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  justify-items: center;
 }

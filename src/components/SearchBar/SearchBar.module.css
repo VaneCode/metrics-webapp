@@ -1,3 +1,5 @@
-.fakeClass {
-  color: #000;
+.search input{
+  color: var(--white-color);
+  background-color: transparent;
+  border: red solid 2px;
 }
