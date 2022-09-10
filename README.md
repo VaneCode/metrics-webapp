@@ -2,15 +2,17 @@
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-# Project name
+# Currencies App
 
-> Project description. 
+> This is a project created with React-Redux, that shows currencies from all over the world. Also, it allows one to search for a specific currency and visualize the details of a currency.
 
 ## Built With
 
 - HTML5
-- CSS
-- React
+- CSS3
+- React-Redux
+- Redux Toolkit
+- Jest
 
 ## Live Demo (if avialable)
 
@@ -30,15 +32,15 @@ To get a local copy up and running follow these simple example steps.
 
 If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
-[Download the ZIP from this location](https://github.com/VaneCode/Math-magicians/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+[Download the ZIP from this location](https://github.com/VaneCode/metrics-webapp/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
 
 ```bash
-git clone https://github.com/VaneCode/Math-magicians.git
+git clone https://github.com/VaneCode/metrics-webapp.git
 ```
 
-- Open the [Repository Link](https://github.com/VaneCode/Math-magicians) of this project in GitHub.
+- Open the [Repository Link](https://github.com/VaneCode/metrics-webapp) of this project in GitHub.
 
-- Once the files are on your machine, open Math-magicinas folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
+- Once the files are on your machine, open metrics-webapp folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
 
 ## 🛠 Installation & Set Up
