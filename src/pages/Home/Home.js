@@ -27,6 +27,7 @@ const Home = () => {
   if (!currencyStatus.currenByName.length) {
     currenList = currencyStatus.currencies.map((currency) => (
       <Link
+        style={{ textDecoration: 'none' }}
         to="/details"
         key={currency.currencyCode}
         onClick={() => dispatch(getCurrencyDetails({ currency }))}
@@ -37,6 +38,7 @@ const Home = () => {
   } else {
     currenList = currencyStatus.currenByName.map((currency) => (
       <Link
+        style={{ textDecoration: 'none' }}
         to="/details"
         key={currency.currencyCode}
         onClick={() => dispatch(getCurrencyDetails({ currency }))}
@@ -61,7 +63,7 @@ const Home = () => {
             }}
           />
         </div>
-        <div>
+        <div className="headerIcons">
           <img src={microphone} alt="microphone" />
           <img src={settings} alt="settings" />
         </div>

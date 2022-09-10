@@ -1,15 +1,16 @@
 .currencyDiv {
   display: flex;
+  flex-direction: column;
   padding: 0.5rem;
   justify-content: space-between;
-  border: solid 1px black;
   height: 11.5rem;
+  color: var(--white-color);
 }
 
 .currencyIcon {
   align-self: center;
-  flex: 50%;
-  height: 10rem;
+  width: 20rem;
+  height: 6rem;
 }
 
 .icon {
@@ -22,9 +23,8 @@
 }
 
 .currencyTags {
-  flex: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-items: center;
+  align-items: end;
+  text-decoration: none;
 }
