@@ -54,7 +54,7 @@
   flex-direction: column;
   height: 100%;
   align-items: flex-start;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .detailsUl {
