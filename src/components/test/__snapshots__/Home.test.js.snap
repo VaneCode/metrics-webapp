@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home test render 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <div>
+      <img
+        alt="home"
+        src="backArrow.png"
+      />
+    </div>
+    <div
+      className="search"
+    >
+      <input
+        onChange={[Function]}
+        placeholder="Currency name"
+        type="text"
+        value=""
+      />
+    </div>
+    <div>
+      <img
+        alt="microphone"
+        src="microphone.png"
+      />
+      <img
+        alt="settings"
+        src="settings.png"
+      />
+    </div>
+  </header>,
+  <div
+    className="currenciesList"
+  />,
+]
+`;

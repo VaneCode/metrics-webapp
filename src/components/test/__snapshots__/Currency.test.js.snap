@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Currency test render 1`] = `
+<div
+  className="currencyDiv"
+>
+  <div
+    className="currencyIcon"
+  >
+    <img
+      alt="Currency icon"
+      className="icon"
+      onError={[Function]}
+      src="https://currencyfreaks.com/photos/flags/agld.png"
+    />
+  </div>
+  <div
+    className="currencyTags"
+  >
+    <h3>
+      Adventure Gold
+    </h3>
+    <span>
+      AGLD
+    </span>
+  </div>
+</div>
+`;
