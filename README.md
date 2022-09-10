@@ -2,15 +2,17 @@
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
-# Project name
+# Currencies App
 
-> Project description. 
+> This is a project created with React-Redux, that shows currencies from all over the world. Also, it allows one to search for a specific currency and visualize the details of a currency.
 
 ## Built With
 
 - HTML5
-- CSS
-- React
+- CSS3
+- React-Redux
+- Redux Toolkit
+- Jest
 
 ## Live Demo (if avialable)
 
