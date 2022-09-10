@@ -44,15 +44,10 @@ const reducerCurrencies = createSlice({
     },
   },
   extraReducers(builder) {
-    builder
-      .addCase(FetchedCurrencies.fulfilled, (state, action) => {
-        state.status = 'Fulfilled';
-        state.currencies = action.payload;
-      })
-      .addCase(FetchedByName.fulfilled, (state, action) => {
-        state.status = 'Fulfilled';
-        state.currencies = action.payload;
-      });
+    builder.addCase(FetchedCurrencies.fulfilled, (state, action) => {
+      state.status = 'Fulfilled';
+      state.currencies = action.payload;
+    });
   },
 });
 
