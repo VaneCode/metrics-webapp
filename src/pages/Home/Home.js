@@ -13,7 +13,6 @@ import Currency from '../../components/Currency/Currency';
 
 const Home = () => {
   const currencyStatus = useSelector((state) => state.currencies);
-  console.log(currencyStatus);
   const [filter, setFilter] = useState('');
   const dispatch = useDispatch();
   const handleChange = (p) => {
@@ -23,7 +22,6 @@ const Home = () => {
     };
     setFilter(p);
     dispatch(getCurrenciesByName({ newFilter }));
-    console.log(currencyStatus.currenByName);
   };
   let currenList;
   if (!currencyStatus.currenByName.length) {

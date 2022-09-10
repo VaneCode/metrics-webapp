@@ -9,7 +9,7 @@
 .search input {
   color: var(--white-color);
   background-color: transparent;
-  border: red solid 2px;
+  border: none;
 }
 .currenciesList {
   width: 100%;
@@ -17,6 +17,11 @@
   flex-wrap: wrap;
 }
 
-.currenciesList div {
+.currenciesList a {
   flex: 50%;
 }
+
+.currenciesList > a:nth-child(1){
+  width: 100%;
+}
+
