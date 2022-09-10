@@ -7,10 +7,27 @@
   padding: 1rem;
 }
 
+.headerIcons {
+  display: flex;
+  gap: 1rem;
+}
+
 .search input {
   color: var(--white-color);
   background-color: transparent;
   border: none;
+  font-family: var(--body-font);
+  font-size: medium;
+  text-align: center;
+}
+
+::placeholder {
+  color: var(--white-color);
+  opacity: 1;
+}
+
+.search input:focus {
+  border: solid 0.1rem var(--warm-grey);
 }
 
 .currenciesList {
@@ -23,6 +40,39 @@
   flex: 50%;
 }
 
-.currenciesList > a:nth-child(1) {
-  width: 100%;
+.currenciesList > a:nth-child(4n-1),
+.currenciesList > a:nth-child(4n) {
+  background-color: #4268b1;
+}
+
+.currenciesList > a:nth-child(4n-2),
+.currenciesList > a:nth-child(4n-3) {
+  background-color: #3f62a4;
+}
+
+.currenciesList > a:first-child .currencyDiv {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  background-color: var(--light-blue);
+  width: 100vw;
+  height: 24rem;
+  padding: 4rem;
+}
+
+.currenciesList > a:first-child .currencyDiv .currencyIcon {
+  align-self: center;
+  width: 20rem;
+  height: 12rem;
+}
+
+.currenciesList > a:first-child .currencyDiv .currencyTags {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: center;
+  text-decoration: none;
 }

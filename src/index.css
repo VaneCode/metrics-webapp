@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap');
+
 /* CSS variables */
 :root {
   --white-color: #fff;
@@ -6,8 +9,8 @@
   --blue: #4369b2;
   --dark-blue: #3f62a4;
   --light-blue: #5586e2;
-  --main-font: "Montserrat", sans-serif;
-  --second-font: "Roboto Slab", serif;
+  --title-font: "Roboto Condensed", sans-serif;
+  --body-font: "Lato", sans-serif;
 }
 
 body {
