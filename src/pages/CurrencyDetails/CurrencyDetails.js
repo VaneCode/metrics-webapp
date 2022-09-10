@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import styles from './CurrencyDetails.module.css';
+import './CurrencyDetails.css';
 import backArrow from '../../img/backArrow.png';
 import microphone from '../../img/microphone.png';
 import settings from '../../img/settings.png';
@@ -17,13 +17,13 @@ const CurrencyDetails = () => {
   const dateTill = new Date(currency[0].available_in_historical_data_till);
   return (
     <>
-      <header className={styles.header}>
+      <header className="header">
         <div>
           <Link to="/">
             <img src={backArrow} alt="Back home" />
           </Link>
         </div>
-        <div className={styles.search}>
+        <div>
           <h1>{currency[0].currencyName}</h1>
         </div>
         <div>
@@ -32,15 +32,15 @@ const CurrencyDetails = () => {
         </div>
       </header>
       <div>
-        <div className={styles.currencyIcon}>
+        <div className="currencyIcon">
           <img
             src={imgStatus ? currency[0].icon : dollar}
             onError={() => setImgStatus(false)}
             alt="Currency icon"
-            className={styles.icon}
+            className="icon"
           />
         </div>
-        <div className={styles.currencyTags}>
+        <div className="currencyTags">
           <h3>{currency[0].currencyName}</h3>
           <span>{currency[0].currencyCode}</span>
         </div>

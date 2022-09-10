@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
-import styles from './Home.module.css';
+import './Home.css';
 import backArrow from '../../img/backArrow.png';
 import microphone from '../../img/microphone.png';
 import settings from '../../img/settings.png';
@@ -47,11 +47,11 @@ const Home = () => {
   }
   return (
     <>
-      <header className={styles.header}>
+      <header className="header">
         <div>
           <img src={backArrow} alt="home" />
         </div>
-        <div className={styles.search}>
+        <div className="search">
           <input
             type="text"
             value={filter}
@@ -66,7 +66,7 @@ const Home = () => {
           <img src={settings} alt="settings" />
         </div>
       </header>
-      <div className={styles.currenciesList}>{currenList}</div>
+      <div className="currentList">{currenList}</div>
     </>
   );
 };
