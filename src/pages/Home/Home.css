@@ -1,0 +1,28 @@
+.header {
+  width: 100%;
+  background-color: #4369b2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.search input {
+  color: var(--white-color);
+  background-color: transparent;
+  border: none;
+}
+
+.currenciesList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.currenciesList a {
+  flex: 50%;
+}
+
+.currenciesList > a:nth-child(1) {
+  width: 100%;
+}
