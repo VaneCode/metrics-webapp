@@ -14,9 +14,9 @@
 - Redux Toolkit
 - Jest
 
-## Live Demo (if avialable)
+## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://magical-zabaione-07290c.netlify.app/)
 
 ## Getting Started
 
