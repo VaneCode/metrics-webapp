@@ -26,26 +26,31 @@ const CurrencyDetails = () => {
         <div>
           <h1>{currency[0].currencyName}</h1>
         </div>
-        <div>
+        <div className="headerIcons">
           <img src={microphone} alt="microphone" />
           <img src={settings} alt="settings" />
         </div>
       </header>
-      <div>
-        <div className="currencyIcon">
-          <img
-            src={imgStatus ? currency[0].icon : dollar}
-            onError={() => setImgStatus(false)}
-            alt="Currency icon"
-            className="icon"
-          />
-        </div>
-        <div className="currencyTags">
-          <h3>{currency[0].currencyName}</h3>
-          <span>{currency[0].currencyCode}</span>
+      <div className="containerDetails">
+        <div className="mainDetails">
+          <div className="detailsIcon">
+            <img
+              src={imgStatus ? currency[0].icon : dollar}
+              onError={() => setImgStatus(false)}
+              alt="Currency icon"
+              className="icon"
+            />
+          </div>
+          <div className="detailsTags">
+            <h3>{currency[0].currencyName}</h3>
+            <span>{currency[0].currencyCode}</span>
+          </div>
         </div>
         <div>
-          <ul>
+          <ul className="detailsUl">
+            <li>
+              <span>Currency details</span>
+            </li>
             <li>
               <span>Available in historical data from:</span>
               <span>{dateFrom.toLocaleDateString()}</span>
