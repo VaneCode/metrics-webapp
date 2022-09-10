@@ -14,9 +14,9 @@
 - Redux Toolkit
 - Jest
 
-## Live Demo (if avialable)
+## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://magical-zabaione-07290c.netlify.app/)
 
 ## Getting Started
 
@@ -32,15 +32,15 @@ To get a local copy up and running follow these simple example steps.
 
 If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 
-[Download the ZIP from this location](https://github.com/VaneCode/Math-magicians/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
+[Download the ZIP from this location](https://github.com/VaneCode/metrics-webapp/archive/refs/heads/main.zip), or run the following [git](https://git-scm.com/downloads) command to clone the files to your machine:
 
 ```bash
-git clone https://github.com/VaneCode/Math-magicians.git
+git clone https://github.com/VaneCode/metrics-webapp.git
 ```
 
-- Open the [Repository Link](https://github.com/VaneCode/Math-magicians) of this project in GitHub.
+- Open the [Repository Link](https://github.com/VaneCode/metrics-webapp) of this project in GitHub.
 
-- Once the files are on your machine, open Math-magicinas folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
+- Once the files are on your machine, open metrics-webapp folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
 
 ## 🛠 Installation & Set Up
