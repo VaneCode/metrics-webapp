@@ -6,11 +6,13 @@
   justify-content: space-between;
   padding: 1rem;
 }
+
 .search input {
   color: var(--white-color);
   background-color: transparent;
   border: none;
 }
+
 .currenciesList {
   width: 100%;
   display: flex;
@@ -21,7 +23,6 @@
   flex: 50%;
 }
 
-.currenciesList > a:nth-child(1){
+.currenciesList > a:nth-child(1) {
   width: 100%;
 }
-

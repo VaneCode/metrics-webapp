@@ -3,9 +3,9 @@
   --white-color: #fff;
   --black-color: #121212;
   --warm-grey: #888;
- --blue: #4369b2;
- --dark-blue: #3f62a4;
- --light-blue: #5586e2;
+  --blue: #4369b2;
+  --dark-blue: #3f62a4;
+  --light-blue: #5586e2;
   --main-font: "Montserrat", sans-serif;
   --second-font: "Roboto Slab", serif;
 }
@@ -24,4 +24,3 @@ body {
 *::after {
   box-sizing: inherit;
 }
-

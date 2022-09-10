@@ -66,7 +66,7 @@ const Home = () => {
           <img src={settings} alt="settings" />
         </div>
       </header>
-      <div className="currentList">{currenList}</div>
+      <div className="currenciesList">{currenList}</div>
     </>
   );
 };
